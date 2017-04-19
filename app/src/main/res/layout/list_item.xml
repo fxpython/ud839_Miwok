@@ -14,8 +14,9 @@
 
     <LinearLayout
         android:id="@+id/text_container"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="@dimen/list_item_height"
+        android:layout_weight="1"
         android:background="#FD8E09"
         android:gravity="center_vertical"
         android:orientation="vertical"
@@ -38,5 +39,13 @@
             android:textColor="@android:color/white"
             tools:text="one" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_arrow"
+        android:layout_width="40dp"
+        android:layout_height="88dp"
+        android:background="#FD8E09"
+        android:paddingRight="16dp"
+        android:src="@drawable/ic_play_arrow" />
 
 </LinearLayout>

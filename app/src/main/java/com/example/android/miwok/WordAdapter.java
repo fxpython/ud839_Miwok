@@ -32,8 +32,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
         }
 
         LinearLayout textContainer = (LinearLayout) listItemView.findViewById(R.id.text_container);
+        ImageView arrowImage = (ImageView) listItemView.findViewById(R.id.play_arrow);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         textContainer.setBackgroundColor(color);
+        arrowImage.setBackgroundColor(color);
 
         Word word = getItem(position);
         TextView defaultTranslation = (TextView) listItemView.findViewById(R.id.text_default);
